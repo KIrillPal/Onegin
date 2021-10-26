@@ -1,7 +1,7 @@
 #include <stdlib.h>
+#include "sorting.h"
+#include "text.h"
 #include "testing.h"
-#include "comparators.h"
-#include "qsort.h"
 
 static int test(int count, int minline, int maxline, int show_log)
 {

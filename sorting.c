@@ -1,6 +1,5 @@
-#include "qsort.h"
-
-//#define ON_DEBUG
+#include <stdio.h>
+#include "sorting.h"
 
 #define MOVE(data, index, size) data = (char*)data + size * index;
 
@@ -18,7 +17,7 @@
                                        \
         first_byte++;                  \
         second_byte++;                 \
-    }                                    \
+    }                                  \
 }
 
 #define RELAX(first, second, size) if (comparator(first, second) > 0) SWAP(first, second, size)
